@@ -1,8 +1,24 @@
+// GENERAL ------------------------------------------------------------
+font-family: "Roboto", sans-serif;
+
+font-weight: 700;
+
+
+
+
 // TODAY ------------------------------------------------------------
+ var todayList = document.getElementById("today-list");
 
 
-
-
+document.addEventListener("DOMContentLoaded", function() {
+    if (todayList.children.length === 0) {
+        let message = "No one is out of the library today."
+        let listItem = document.createElement("li")
+        let liText = document.createTextNode(message);
+        listItem.appendChild(liText);
+        todayList.appendChild(listItem);
+    }
+});
 
 
 
@@ -28,8 +44,7 @@ const cardTitles = document.getElementsByClassName("card-title");
 
 
 // active indicator for which day is today on This Week
-const day = new Date().toString().substring(0,3);
-console.log(day);
+let day = new Date().toString().substring(0,3);
 
 switch(day) {
     case "Mon":
@@ -64,7 +79,6 @@ switch(day) {
 // FORM ------------------------------------------------------------
 // set variables
 const submitButton = document.getElementById("btn-submit");
-const todayList = document.getElementById("today-list");
 
 // attach event listener to button
 submitButton.addEventListener("click", addPerson);
@@ -86,5 +100,4 @@ function addPerson() {
         })
     }            
 };
-
 
