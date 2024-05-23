@@ -42,6 +42,9 @@ const startDate = staffInfo[1].value;
 const endDate = staffInfo[2].value;
 const today = new Date().toISOString().substring(0,10);
 
+// set height for form's Message
+const textArea = document.getElementById("text-area");
+
 
 // attach event listener to button
 submitButton.addEventListener("click", addPerson);

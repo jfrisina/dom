@@ -96,21 +96,21 @@
 <!----------------------- Out of Library Form ------------------------>
 <section>
     <h2 class="mt-5 text-center">Out of Library Submission</h2>
-    <form class="w-50 m-auto">
+    <form class="w-50 m-auto mb-5">
         <div class="form-floating mb-3">
-            <input type="test" class="form-control" id="name" placeholder="Name">
+            <input type="test" class="form-control" id="name" placeholder="Name" required>
             <label for="name">Name</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="date" class="form-control" id="start-date" placeholder="Start Date">
+            <input type="date" class="form-control" id="start-date" placeholder="Start Date" required>
             <label for="start-date">Start Date</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="date" class="form-control" id="end-date" placeholder="En Date">
+            <input type="date" class="form-control" id="end-date" placeholder="End Date" required>
             <label for="end-date">End Date</label>
         </div> 
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" placeholder="Message" id="text-area" style="height: 100px">
+            <input type="text" class="form-control" placeholder="Message" id="text-area" required>
             <label for="text-area">Message</label>
           </div>
         <div class="text-center">
@@ -118,5 +118,8 @@
         </div>
     </form>
 </section>
+<footer>
+    <div class="font-white">hi</div>
+</footer>
 </body>
 </html>
