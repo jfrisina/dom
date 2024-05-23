@@ -1,0 +1,16 @@
+@include media-breakpoint-up(sm) {
+    .card {
+        flex-basis: calc(50%)
+    }
+}
+@include media-breakpoint-up(md) {
+    .card {
+        flex-basis: calc(33.33%);
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .card {
+        flex-basis: calc(16.66%);
+    }
+}
